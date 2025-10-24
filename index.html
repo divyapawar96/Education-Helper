@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduHelper – Smart Text Simplifier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="glass-card">
+      <h1>🧠 EduHelper</h1>
+      <p>Simplify or Summarize text instantly with AI (Frontend Demo)</p>
+
+      <div class="text-form">
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+        <div class="buttons">
+          <button onclick="simulateSimplify()">Simplify</button>
+          <button onclick="simulateSummarize()">Summarize</button>
+          <button onclick="clearText()">Clear</button>
+        </div>
+      </div>
+
+      <div id="outputCard" class="output-card" style="display: none;">
+        <h2>✅ Output:</h2>
+        <p id="outputText"></p>
+        <button onclick="copyToClipboard()" class="copy-btn">Copy Text</button>
+      </div>
+
+      <!-- Demo Samples -->
+      <div class="demo-samples">
+        <h3>Try these samples:</h3>
+        <div class="sample-buttons">
+          <button onclick="loadSample(1)" class="sample-btn">Sample 1: Science</button>
+          <button onclick="loadSample(2)" class="sample-btn">Sample 2: History</button>
+          <button onclick="loadSample(3)" class="sample-btn">Sample 3: Technology</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
